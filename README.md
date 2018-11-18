@@ -1,19 +1,24 @@
 Asynchrone TP1
 ==============
-Nous allons utiliser **NodeJS**
+Nous allons utiliser **NodeJS** et **Express**
 
-# Comment ca marche
-Nous pouvons accéder à 4 pages distinctes avec 3 urls :
+# Presentation
+Comme la semaine dernière nous pouvons accéder à 4 pages distinctes avec 3 un peu differentes urls :
 
 * localhost:8080/
-* localhost:8080/hello?name=fabrice
-* localhost:8080/hello?name=xxx
+* localhost:8080/hello/fabrice
+* localhost:8080/hello/xxx
 * localhost:8080/nimportequoi
 
+Vous pouvez installer les dépendances avec la commande suivante:
+
+```
+npm install
+```
 Vous pouvez lancer le serveur avec la commande suivante:
 
 ```
-node index.js
+./node_modules/.bin/nodemon main.js
 ```
 
 ## Les pages

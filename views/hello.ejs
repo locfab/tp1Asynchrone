@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <% include partials/head %>
+    </head>
+    <body>
+        <% if (name.toLowerCase() === "fabrice") { %>
+            <div class="container">
+                Fabrice, 22 ans et il y a 6ans et 4mois j'avais 16ans
+            </div>
+        <% } else { %>
+            <div class="container">
+                Hello <%= name %> !
+            </div>
+        <% } %>
+    </body>
+</html>

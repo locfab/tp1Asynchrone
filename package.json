@@ -15,11 +15,16 @@
     "typescript": "^3.1.6"
   },
   "devDependencies": {
+    "@types/chai": "^4.1.7",
     "@types/express": "^4.16.0",
     "@types/levelup": "^3.1.0",
-    "@types/node": "^10.12.9"
+    "@types/mocha": "^5.2.5",
+    "@types/node": "^10.12.9",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
   },
   "scripts": {
+    "test": "./node_modules/.bin/mocha -r ts-node/register src/**/*.test.ts",
     "start": "./node_modules/.bin/ts-node src/server.ts",
     "dev": "./node_modules/.bin/nodemon ",
     "build": "./node_modules/.bin/tsc -p tsconfig.json"

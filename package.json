@@ -5,6 +5,7 @@
   "main": "dist/server",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "del": "^3.0.0",
     "encoding-down": "^5.0.4",
     "express": "^4.16.4",
     "level-ws": "^1.0.0",

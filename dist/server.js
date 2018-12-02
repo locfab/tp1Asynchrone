@@ -24,7 +24,7 @@ app.get("/metrics/:id", (req, res) => {
             res.json(result);
     });
 });
-app.post("/metrics/:id", (req, res) => {
+app.("/metrics/:id", (req, res) => {
     dbMet.save(req.params.id, req.body, (err) => {
         if (err) {
             res.status(500);

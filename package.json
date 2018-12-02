@@ -6,8 +6,12 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "del": "^3.0.0",
+    "ejs": "^2.6.1",
     "encoding-down": "^5.0.4",
     "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "level": "^4.0.0",
+    "level-session-store": "^2.1.0",
     "level-ws": "^1.0.0",
     "leveldown": "^4.0.1",
     "levelup": "^3.1.1",
@@ -34,10 +38,10 @@
     "type": "git",
     "url": "git+https://github.com/RomainMichau/Asynchronous-Server-Technologie.git"
   },
-  "author": "Romain Michau",
+  "author": "locfab",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RomainMichau/Asynchronous-Server-Technologie/issues"
+    "url": "https://github.com/locfab/tp1Asynchrone/issues"
   },
-  "homepage": "https://github.com/RomainMichau/Asynchronous-Server-Technologie#readme"
+  "homepage": "https://github.com/locfab/tp1Asynchrone#readme"
 }

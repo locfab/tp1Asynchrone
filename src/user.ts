@@ -15,6 +15,7 @@ export class User {
         } else this.password = password
     }
     static fromDb(data: any): User {
+        console.log(data)
         return new User("a","b","c")
     }
 
@@ -37,9 +38,15 @@ export class UserHandler {
 
     public get(username: string, callback: (err: Error | null, result?: User) => void) {
         this.db.get(`user:${username}`, function (err: Error, data: any) {
-            if (err) callback(err)
-            else if (data === undefined) callback(null, data)
-            else callback(null, User.fromDb(data))
+            if (err){
+                callback(err)
+            }
+            else if (data === undefined) {
+                callback(null, data)
+            }
+            else {
+                callback(null, User.fromDb(data))
+            }
         })
     }
 

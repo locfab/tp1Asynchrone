@@ -23,28 +23,40 @@ app.use(session({
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded());
 
+
 app.set('views', './views')
 app.set('view engine', 'ejs')
+
+
+app.listen(port, (err: Error) => {
+    if (err) throw err;
+    console.log(`Server is listening on port ${port}`);
+});
+
 
 
 //USER AUTHENTICATION 1
 import { UserHandler, User } from './user'
 const dbUser: UserHandler = new UserHandler('./db/users')
 
-app.get('/login', (req: any, res: any) => {
+const authRouter = express.Router()
+
+authRouter.get('/login', (req: any, res: any) => {
     res.render('login')
 })
 
-app.get('/logout', (req: any, res: any) => {
+authRouter.get('/logout', (req: any, res: any) => {
     delete req.session.loggedIn
     delete req.session.user
     res.redirect('/login')
 })
 
 //USER AUTHENTICATION 2
-app.post('/login', (req: any, res: any, next: any)  => {
+authRouter.post('/login', (req: any, res: any, next: any)  => {
     dbUser.get(req.body.username, (err: Error | null, result?: User) => {
-        if (err) next(err)
+        if (err){
+            next(err)
+        }
         if (result === undefined || !result.validatePassword(req.body.password)) {
             res.redirect('/login')
         } else {
@@ -86,23 +98,19 @@ const authCheck = function (req: any, res: any, next: any) {
     } else res.redirect('/login')
 }
 
-app.get('/', authCheck, (req: any, res: any) => {
+authRouter.get('/', (req: any, res: any) => {
     res.render('index', { name: req.session.username })
 })
 
 
 //USER AUTHORIZATION MIDDLEWARE
 
-app.get('/signup', (req, res) => {
+authRouter.get('/signup', (req, res) => {
     res.render('signup')
 })
 
 
-
-app.listen(port, (err: Error) => {
-    if (err) throw err;
-    console.log(`Server is listening on port ${port}`);
-});
+app.use(authRouter);
 
 
 
@@ -112,6 +120,11 @@ app.listen(port, (err: Error) => {
 
 
 
+
+
+
+
+//const metricsRouter = express.Router()
 
 
 app.get("/metrics/:id", (req: any, res: any) => {
@@ -133,7 +146,7 @@ app.post("/metrics/:id", (req: any, res: any) => {
     });
 });
 
-app.delete("/metrics/:id", (req, res) => {
+app.delete("/metrics/:id", (req: any, res: any) => {
     dbMet.delete(req.params.id, (err) => {
         if (err) {
             res.status(500);
@@ -142,3 +155,12 @@ app.delete("/metrics/:id", (req, res) => {
         res.status(200).send();
     });
 });
+
+
+
+
+
+app.use(function (err: Error, req: any, res: any) {
+    console.error(err.stack)
+    res.status(500).send("hard broke")
+})

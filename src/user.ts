@@ -1,4 +1,5 @@
 import { LevelDb } from "./leveldb"
+const bcrypt = require('bcryptjs')
 import WriteStream from 'level-ws'
 
 export class User {
@@ -6,7 +7,7 @@ export class User {
     public email: string
     private password: string = ""
 
-    constructor(username: string, email: string, password: string, passwordHashed: boolean = false) {
+    constructor(username: string, email: string, password: string, passwordHashed: boolean = true) {
         this.username = username
         this.email = email
 
@@ -22,8 +23,10 @@ export class User {
         return new User(username,email,password)
     }
 
+
     public setPassword(toSet: string): void {
-        this.password = toSet
+        var hash = bcrypt.hashSync(toSet, 10)
+        this.password = hash
     }
 
     public getPassword(): string {
@@ -31,7 +34,8 @@ export class User {
     }
 
     public validatePassword(toValidate: String): boolean {
-        return this.password === toValidate
+        var toReturn = bcrypt.compareSync(toValidate, this.getPassword())
+        return toReturn
     }
 }
 
@@ -61,7 +65,7 @@ export class UserHandler {
         console.log("user")
         console.log(user)
         console.log("user")
-        user = new User(user.username, user.email, user.password)
+        user = new User(user.username, user.email, user.password, false)
         console.log("newuser")
         console.log(user)
         console.log("newuser")

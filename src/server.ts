@@ -54,6 +54,7 @@ authRouter.get('/logout', (req: any, res: any) => {
 //USER AUTHENTICATION 2
 authRouter.post('/login', (req: any, res: any, next: any)  => {
     dbUser.get(req.body.username, (err: Error | null, result?: User) => {
+        console.log(req.body)
         if (err){
             next(err)
         }
@@ -79,10 +80,10 @@ userRouter.post('/', (req: any, res: any, next: any)  => {
     })
 })
 
-userRouter.get('/', (req: any, res: any, next: any)  => {
-    dbUser.get(req.body.username, (err: Error | null, result?: User) => {
+userRouter.get('/:username', (req: any, res: any, next: any)  => {
+    dbUser.get(req.params.username, (err: Error | null, result?: User) => {
         if (err) next(err)
-        if (result === undefined || !result.validatePassword(req.body.username)) {
+        if (result === undefined) {
             res.status(404).send("user not found")
         } else {
             res.status(200).json(result)
@@ -90,7 +91,7 @@ userRouter.get('/', (req: any, res: any, next: any)  => {
     })
 })
 
-app.use(userRouter);
+app.use('/user', userRouter);
 
 const authCheck = function (req: any, res: any, next: any) {
     if (req.session.loggedIn) {
@@ -113,7 +114,18 @@ authRouter.get('/signup', (req, res) => {
 app.use(authRouter);
 
 
-
+//USER SIGNUP 1
+authRouter.post('/signup', (req: any, res: any, next: any)  => {
+    dbUser.save(req.body, (err: Error | null, result?: User) => {
+        if (err){
+            next(err)
+        }
+        else {
+            console.log(res.body)
+            res.redirect('/login')
+        }
+    })
+})
 
 
 

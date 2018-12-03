@@ -14,9 +14,12 @@ export class User {
             this.setPassword(password)
         } else this.password = password
     }
-    static fromDb(data: any): User {
-        console.log(data)
-        return new User("a","b","c")
+    static fromDb(username: string, data: any): User {
+        const [password, email] = data.split(':')
+        console.log("fromDb")
+        console.log(username,email,password)
+        console.log("fromDb")
+        return new User(username,email,password)
     }
 
     public setPassword(toSet: string): void {
@@ -45,19 +48,31 @@ export class UserHandler {
                 callback(null, data)
             }
             else {
-                callback(null, User.fromDb(data))
+                let user = User.fromDb(username, data)
+                console.log("user else")
+                console.log(user)
+                console.log("user else")
+                callback(null, user)
             }
         })
     }
 
     public save(user: any, callback: (err: Error | null) => void) {
-
+        console.log("user")
+        console.log(user)
+        console.log("user")
         user = new User(user.username, user.email, user.password)
+        console.log("newuser")
+        console.log(user)
+        console.log("newuser")
 
         this.db.put(
             `user:${user.username}`,
             `${user.getPassword()}:${user.email}`,
             (err: Error | null) => {
+                console.log("nike ta mere")
+                console.log(err)
+                console.log("nike ta mere")
                 callback(err)
             }
         )

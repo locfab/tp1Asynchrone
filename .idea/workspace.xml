@@ -2,21 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b8b6e9f-d0e2-4405-b52b-d7e7ee31cb5e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/CURRENT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/LOCK" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/LOG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sessions/000003.log" beforeDir="false" afterPath="$PROJECT_DIR$/db/sessions/000003.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sessions/CURRENT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sessions/LOCK" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sessions/LOG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/users/000003.log" beforeDir="false" afterPath="$PROJECT_DIR$/db/users/000003.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/users/CURRENT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/users/LOCK" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/users/LOG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/000003.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/CURRENT" beforeDir="false" afterPath="$PROJECT_DIR$/db/CURRENT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/db/LOG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/MANIFEST-000002" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sessions/000003.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sessions/CURRENT" beforeDir="false" afterPath="$PROJECT_DIR$/db/sessions/CURRENT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sessions/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/db/sessions/LOG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sessions/MANIFEST-000002" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users/000003.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users/CURRENT" beforeDir="false" afterPath="$PROJECT_DIR$/db/users/CURRENT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/db/users/LOG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users/MANIFEST-000002" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/signup.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/signup.ejs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,20 +34,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="user.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/user.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+            <state relative-caret-position="60">
+              <caret line="64" column="27" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signup.ejs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="signup.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/signup.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+            <state relative-caret-position="240">
+              <caret line="16" column="85" selection-start-line="16" selection-start-column="85" selection-end-line="16" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -131,9 +129,9 @@
         <option value="$PROJECT_DIR$/views/index.ejs" />
         <option value="$PROJECT_DIR$/views/login.ejs" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/views/signup.ejs" />
         <option value="$PROJECT_DIR$/src/server.ts" />
         <option value="$PROJECT_DIR$/src/user.ts" />
+        <option value="$PROJECT_DIR$/views/signup.ejs" />
       </list>
     </option>
   </component>
@@ -228,12 +226,12 @@
       <workItem from="1543160379302" duration="5083000" />
       <workItem from="1543226968603" duration="3509000" />
       <workItem from="1543755758032" duration="3107000" />
-      <workItem from="1543829874541" duration="5506000" />
+      <workItem from="1543829874541" duration="6129000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22955000" />
+    <option name="totallyTimeSpent" value="23578000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1421" height="797" extended-state="0" />
@@ -571,13 +569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/signup.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/server.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -594,8 +585,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/user.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+        <state relative-caret-position="60">
+          <caret line="64" column="27" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/signup.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="85" selection-start-line="16" selection-start-column="85" selection-end-line="16" selection-end-column="85" />
         </state>
       </provider>
     </entry>

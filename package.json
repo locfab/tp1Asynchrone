@@ -36,7 +36,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RomainMichau/Asynchronous-Server-Technologie.git"
+    "url": "git+https://github.com/locfab/tp1Asynchrone.git"
   },
   "author": "locfab",
   "license": "ISC",

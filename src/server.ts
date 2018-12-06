@@ -54,17 +54,18 @@ authRouter.get('/logout', (req: any, res: any) => {
 //USER AUTHENTICATION 2
 authRouter.post('/login', (req: any, res: any, next: any)  => {
     dbUser.get(req.body.username, (err: Error | null, result?: User) => {
-        console.log(req.body)
         if (err){
             next(err)
+        }else{
+            if (result === undefined || !result.validatePassword(req.body.password)) {
+                res.redirect('/login')
+            } else {
+                req.session.loggedIn = true
+                req.session.user = result
+                res.redirect('/')
+            }
         }
-        if (result === undefined || !result.validatePassword(req.body.password)) {
-            res.redirect('/login')
-        } else {
-            req.session.loggedIn = true
-            req.session.user = result
-            res.redirect('/')
-        }
+
     })
 })
 
@@ -121,7 +122,6 @@ authRouter.post('/signup', (req: any, res: any, next: any)  => {
             next(err)
         }
         else {
-            console.log(res.body)
             res.redirect('/login')
         }
     })
@@ -136,43 +136,48 @@ authRouter.post('/signup', (req: any, res: any, next: any)  => {
 
 
 
-//const metricsRouter = express.Router()
+const metricsRouter = express.Router()
+app.use('/metrics', metricsRouter);
+metricsRouter.use((req: any, res: any, next: any)  => {
+    authCheck(req, res, next)
+});
 
 
-app.get("/metrics/:id", (req: any, res: any) => {
-    dbMet.get(req.params.id, (err: Error | null, result?: Metric[]) => {
+metricsRouter.get("/", (req: any, res: any) => {
+    dbMet.get(req.session.user.username, (err: Error | null, result?: Metric[]) => {
         if (err) throw err;
-        if (result === undefined) {
-            res.write("no result");
-            res.send();
-        } else res.json(result);
+        res.render('metrics', {metrics: result})
     });
+
 });
-app.post("/metrics/:id", (req: any, res: any) => {
-    dbMet.save(req.params.id, req.body, (err: Error | null) => {
+metricsRouter.post("/", (req: any, res: any) => {
+    if(req.body.value != "" && req.body.timestamp != ""){
+        dbMet.save(req.session.user.username, [req.body], (err: Error | null) => {
+            if (err) {
+                res.status(500);
+                throw err;
+            }
+            res.redirect('/metrics')
+        });
+    }
+    res.redirect('/metrics')
+});
+
+metricsRouter.post("/delete", (req: any, res: any) => {
+    dbMet.delete(req.session.user.username, req.body.timestamp, (err) => {
         if (err) {
             res.status(500);
             throw err;
         }
-        res.status(200).send();
-    });
-});
-
-app.delete("/metrics/:id", (req: any, res: any) => {
-    dbMet.delete(req.params.id, (err) => {
-        if (err) {
-            res.status(500);
-            throw err;
-        }
-        res.status(200).send();
+        res.redirect('/metrics')
     });
 });
 
 
 
 
-
+/*
 app.use(function (err: Error, req: any, res: any) {
-    console.error(err.stack)
-    res.status(500).send("hard broke")
-})
+    if (err)
+        res.status(500).send("hard broke")
+})*/

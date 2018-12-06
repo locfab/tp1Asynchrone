@@ -18,7 +18,6 @@ export class MetricsHandler {
     }
     public save(key: string, met: Metric[], callback: (error: Error | null) => void)
     {
-        console.log(met);
         const stream = WriteStream(this.db);
         stream
             .on('close', ()=>{
@@ -29,7 +28,8 @@ export class MetricsHandler {
                 callback(null);
             })
         met.forEach(m => {
-            stream.write({ key: `metric:${key}:${m.timestamp}`, value: m.value });
+            if(m.timestamp != "")
+                stream.write({ key: `metric:${key}:${m.timestamp}`, value: m.value });
         });
         stream.end();
     }
@@ -42,7 +42,7 @@ export class MetricsHandler {
                 callback(err);
             })
             .on("end", () => {
-                callback(null);
+                callback(null, met);
             })
             .on("data", (data: any) => {
                 const [, k, timestamp] = data.key.split(":");
@@ -55,7 +55,7 @@ export class MetricsHandler {
                 }
             });
     }
-    delete(key, callback) {const stream = this.db.createReadStream();
+    delete(key, myTimestamp, callback) {const stream = this.db.createReadStream();
         var met = [];
         stream
             .on("error",(err: Error) => {
@@ -68,7 +68,7 @@ export class MetricsHandler {
             .on("data", (data) => {
                 const [, k, timestamp] = data.key.split(":");
                 const value = data.value;
-                if (key != k) {
+                if (key != k || timestamp != myTimestamp) {
                     console.log(`Level DB error: ${data} does not match key ${key}`);
                 }
                 else {

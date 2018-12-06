@@ -159,8 +159,9 @@ metricsRouter.post("/", (req: any, res: any) => {
             }
             res.redirect('/metrics')
         });
+    }else{
+        res.redirect('/metrics')
     }
-    res.redirect('/metrics')
 });
 
 metricsRouter.post("/delete", (req: any, res: any) => {

@@ -2,21 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b8b6e9f-d0e2-4405-b52b-d7e7ee31cb5e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/db/000006.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/CURRENT" beforeDir="false" afterPath="$PROJECT_DIR$/db/CURRENT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/db/LOG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/db/LOG.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/MANIFEST-000004" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sessions/000003.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sessions/CURRENT" beforeDir="false" afterPath="$PROJECT_DIR$/db/sessions/CURRENT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sessions/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/db/sessions/LOG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sessions/MANIFEST-000002" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/users/000006.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/users/CURRENT" beforeDir="false" afterPath="$PROJECT_DIR$/db/users/CURRENT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/users/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/db/users/LOG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/users/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/db/users/LOG.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/users/MANIFEST-000004" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/000005.ldb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/000008.ldb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/000011.ldb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/000012.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/CURRENT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/LOCK" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/LOG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/LOG.old" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/MANIFEST-000010" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sessions/000005.ldb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sessions/000008.ldb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sessions/000009.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sessions/CURRENT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sessions/LOCK" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sessions/LOG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sessions/LOG.old" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sessions/MANIFEST-000007" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users/000005.ldb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users/000010.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users/CURRENT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users/LOCK" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users/LOG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users/LOG.old" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users/MANIFEST-000009" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_test/000003.log" beforeDir="false" afterPath="$PROJECT_DIR$/db_test/000003.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_test/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/db_test/LOG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/metrics.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/metrics.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/metrics.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/metrics.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,11 +41,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="server.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/server.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="162" column="32" selection-start-line="162" selection-start-column="32" selection-end-line="162" selection-end-column="32" />
+            <state relative-caret-position="159">
+              <caret line="167" column="68" selection-start-line="167" selection-start-column="65" selection-end-line="167" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="metrics.test.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/metrics.test.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="55" column="6" lean-forward="true" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -39,8 +62,8 @@
       <file leaf-file-name="metrics.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/metrics.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+            <state relative-caret-position="247">
+              <caret line="65" column="27" lean-forward="true" selection-start-line="65" selection-end-line="66" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -80,7 +103,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="270">
-                <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+                <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
               </first_editor>
               <second_editor />
             </state>
@@ -101,15 +124,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="915">
               <caret line="61" column="72" selection-start-line="61" selection-start-column="72" selection-end-line="61" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signup.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/signup.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -150,9 +164,9 @@
       <find>res.status</find>
       <find>nike ta mere</find>
       <find>./use</find>
-      <find>sessio</find>
       <find>res.status(5</find>
       <find>cons</find>
+      <find>sessio</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -167,7 +181,6 @@
         <option value="$PROJECT_DIR$/dist/metrics.js" />
         <option value="$PROJECT_DIR$/src/leveldb.ts" />
         <option value="$PROJECT_DIR$/dist/server.js" />
-        <option value="$PROJECT_DIR$/src/metrics.test.ts" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/views/login.ejs" />
         <option value="$PROJECT_DIR$/views/signup.ejs" />
@@ -176,10 +189,11 @@
         <option value="$PROJECT_DIR$/src/populate.ts" />
         <option value="$PROJECT_DIR$/views/metrics.ejs" />
         <option value="$PROJECT_DIR$/src/user.ts" />
-        <option value="$PROJECT_DIR$/src/metrics.ts" />
         <option value="$PROJECT_DIR$/views/index.ejs" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/server.ts" />
+        <option value="$PROJECT_DIR$/src/metrics.ts" />
+        <option value="$PROJECT_DIR$/src/metrics.test.ts" />
       </list>
     </option>
   </component>
@@ -287,12 +301,12 @@
       <workItem from="1543755758032" duration="3107000" />
       <workItem from="1543829874541" duration="6306000" />
       <workItem from="1543995576150" duration="1165000" />
-      <workItem from="1544085140844" duration="10626000" />
+      <workItem from="1544085140844" duration="11065000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35546000" />
+    <option name="totallyTimeSpent" value="35985000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1421" height="797" extended-state="0" />
@@ -301,12 +315,12 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14503263" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14503263" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32918397" />
@@ -527,13 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/metrics.test.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="46" column="42" lean-forward="true" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -613,16 +620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/metrics.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="38" column="24" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/home.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -648,16 +645,33 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="270">
-            <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+            <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/metrics.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="65" column="27" lean-forward="true" selection-start-line="65" selection-end-line="66" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/server.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="162" column="32" selection-start-line="162" selection-start-column="32" selection-end-line="162" selection-end-column="32" />
+        <state relative-caret-position="159">
+          <caret line="167" column="68" selection-start-line="167" selection-start-column="65" selection-end-line="167" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/metrics.test.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="55" column="6" lean-forward="true" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
         </state>
       </provider>
     </entry>

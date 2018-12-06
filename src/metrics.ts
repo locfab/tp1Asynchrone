@@ -55,7 +55,7 @@ export class MetricsHandler {
                 }
             });
     }
-    delete(key, myTimestamp, callback) {const stream = this.db.createReadStream();
+    delete(key, myTimestamp, callback: (err:Error | null) => void) {const stream = this.db.createReadStream();
         var met = [];
         stream
             .on("error",(err: Error) => {

@@ -43,13 +43,13 @@ describe('Metrics', function () {
                 })
             })
             it('should delete metric', function () {
-                dbMet.delete('1', function (err: Error | null) {
+                dbMet.delete('1', "1384686660000",  function (err: Error | null) {
                     expect(err).to.be.null
                 });
             })
         })
         it('should delete non metric because no create without error', function () {
-            dbMet.delete('1', function (err: Error | null) {
+            dbMet.delete('1', "1384686660000", function (err: Error | null) {
                 expect(err).to.be.null
             });
         })

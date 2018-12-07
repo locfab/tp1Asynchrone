@@ -2,34 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b8b6e9f-d0e2-4405-b52b-d7e7ee31cb5e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/db/sessions/000016.ldb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/sessions/000018.ldb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/CURRENT" beforeDir="false" afterPath="$PROJECT_DIR$/db/CURRENT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/db/LOG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/db/LOG.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/MANIFEST-000015" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sessions/000005.ldb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sessions/000008.ldb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sessions/000009.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sessions/CURRENT" beforeDir="false" afterPath="$PROJECT_DIR$/db/sessions/CURRENT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sessions/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/db/sessions/LOG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sessions/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/db/sessions/LOG.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/sessions/MANIFEST-000007" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/users/000010.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/users/000016.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/users/CURRENT" beforeDir="false" afterPath="$PROJECT_DIR$/db/users/CURRENT" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/users/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/db/users/LOG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/users/LOG.old" beforeDir="false" afterPath="$PROJECT_DIR$/db/users/LOG.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/users/MANIFEST-000015" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_test/LOG" beforeDir="false" afterPath="$PROJECT_DIR$/db_test/LOG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/metrics.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/metrics.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/metrics.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/metrics.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/metrics.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/metrics.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/000005.ldb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/000018.ldb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/000023.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/CURRENT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/LOCK" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/LOG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/LOG.old" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/MANIFEST-000022" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sessions/000028.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sessions/000029.ldb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sessions/CURRENT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sessions/LOCK" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sessions/LOG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sessions/LOG.old" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/sessions/MANIFEST-000026" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users/000005.ldb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users/000022.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users/CURRENT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users/LOCK" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users/LOG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users/LOG.old" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users/MANIFEST-000021" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_test/000003.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_test/CURRENT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_test/LOCK" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_test/LOG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_test/MANIFEST-000002" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,7 +50,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -57,6 +58,15 @@
                 <caret line="53" column="80" selection-start-line="53" selection-start-column="80" selection-end-line="53" selection-end-column="80" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
             </state>
           </provider>
         </entry>
@@ -97,7 +107,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/handles.js" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/src/leveldb.ts" />
@@ -116,6 +125,7 @@
         <option value="$PROJECT_DIR$/src/metrics.ts" />
         <option value="$PROJECT_DIR$/src/server.ts" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -151,11 +161,6 @@
             <path>
               <item name="tp1Asynchrone" type="b2602c69:ProjectViewProjectNode" />
               <item name="tp1Asynchrone" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tp1Asynchrone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tp1Asynchrone" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -218,12 +223,12 @@
       <workItem from="1543755758032" duration="3107000" />
       <workItem from="1543829874541" duration="6306000" />
       <workItem from="1543995576150" duration="1165000" />
-      <workItem from="1544085140844" duration="12681000" />
+      <workItem from="1544085140844" duration="12914000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37601000" />
+    <option name="totallyTimeSpent" value="37834000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1421" height="797" extended-state="0" />
@@ -420,13 +425,6 @@
     <entry file="file://$PROJECT_DIR$/nodemon.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/handles.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
@@ -589,6 +587,13 @@
             <caret line="53" column="80" selection-start-line="53" selection-start-column="80" selection-end-line="53" selection-end-column="80" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
         </state>
       </provider>
     </entry>

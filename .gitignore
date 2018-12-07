@@ -86,3 +86,6 @@ db_test/*
 
 #dist
 dist
+
+#.idea
+.idea

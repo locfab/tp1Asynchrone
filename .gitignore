@@ -85,4 +85,4 @@ db/*
 db_test/*
 
 #dist
-dist/*
+dist

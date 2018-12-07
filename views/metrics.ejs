@@ -28,3 +28,42 @@
     </ul>
     <% } %>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script type="text/javascript" src="jscript/graph.js"></script>
+
+<div class="graph">
+    <canvas id="myChart" width="100" height="100"></canvas>
+    <script>
+        var mesMetrics
+        var metricsName =[];
+        var values =[];
+        mesMetrics =  <%- JSON.stringify(metrics)%>
+         mesMetrics.forEach(function (element) {
+            metricsName.push(element.timestamp)
+            values.push(element.value)
+        })
+        var ctx = document.getElementById("myChart").getContext('2d');
+        var myChart = new Chart(ctx, {
+
+            type: 'bar',
+            data: {
+                labels: metricsName,
+                datasets: [{
+                    label: '# of Votes',
+                    data: values,
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+</div>

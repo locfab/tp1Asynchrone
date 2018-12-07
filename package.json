@@ -6,6 +6,7 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
+    "chart.js": "^2.7.3",
     "del": "^3.0.0",
     "ejs": "^2.6.1",
     "encoding-down": "^5.0.4",

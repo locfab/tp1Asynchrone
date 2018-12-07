@@ -48,7 +48,7 @@ export class MetricsHandler {
                 const [, k, timestamp] = data.key.split(":");
                 const value = data.value;
                 if (key != k) {
-                    console.log(`Level DB error: ${data} does not match key ${key}`);
+                    //console.log(`Level DB error: ${data} does not match key ${key}`);
                 }
                 else {
                     met.push(new Metric(timestamp, value));
@@ -69,7 +69,7 @@ export class MetricsHandler {
                 const [, k, timestamp] = data.key.split(":");
                 const value = data.value;
                 if (key != k || timestamp != myTimestamp) {
-                    console.log(`Level DB error: ${data} does not match key ${key}`);
+                    //console.log(`Level DB error: ${data} does not match key ${key}`);
                 }
                 else {
                     this.db.del(data.key, function (err) {

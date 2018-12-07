@@ -51,7 +51,7 @@ Permet d'avoir acces au logout et au metrics
 
 #### "/metrics" Auth
 
-Permet d'ajouter, modifier ses metrics
+Permet d'ajouter, modifier ses metrics, et voir les metrics et voir un diagramme
 
 
 FABRICE LOCQUEVILLE

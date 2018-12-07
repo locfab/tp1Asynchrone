@@ -79,10 +79,10 @@ typings/
 .dynamodb/
 
 #db
-.db/*
+db/*
 
 #db_test
-.db_test/*
+db_test/*
 
 #dist
-.dist/*
+dist/*

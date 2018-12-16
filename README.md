@@ -42,14 +42,14 @@ username: fabrice3, password: 1234567890
 ```
 Qui auront chacun des metrics différentes
 
-#### "/signup" Guest
+### "/signup" Guest
 
 Permet de creer des metrics
 
 ### "/" Auth
 Permet d'avoir acces au logout et au metrics
 
-#### "/metrics" Auth
+### "/metrics" Auth
 
 Permet d'ajouter, modifier ses metrics, et voir les metrics et voir un diagramme
 
